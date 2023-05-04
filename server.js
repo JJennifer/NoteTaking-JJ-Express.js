@@ -4,7 +4,7 @@ const fs = require("fs");
 
 
 
-const PORT = 4002;
+const PORT = process.env.PORT || 4002;
 
 const app = express();
 
