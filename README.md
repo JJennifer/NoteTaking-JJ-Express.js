@@ -59,4 +59,4 @@ I created a server.js and added in npm packages like express and uuid. This will
 
   ## Deployed Application
 
-  [Note Taker Website](https://note-taking-jj-express.herokuapp.com/notes)
+  [Note Taker Website](https://note-taking-jj-express.herokuapp.com/)
