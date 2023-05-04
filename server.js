@@ -13,9 +13,9 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static("public"));
 
-app.get("/", (req, res) => {
+app.get("/", (req, res) => 
     res.sendFile(path.join(__dirname, "/public/index.html"))
-});
+);
 
 // the /notes is given by the index.js line 7 
 app.get("/notes", (req, res) => {
