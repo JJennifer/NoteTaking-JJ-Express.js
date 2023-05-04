@@ -43,7 +43,7 @@ app.post("/api/notes", (req, res) => {
             title,
             text,
         };
-    };
+    
     // reading notes in system to list them along with new note
     fs.readFile("./db/db.json", "utf8", (error, data)=> {
         if(error){
@@ -62,7 +62,9 @@ app.post("/api/notes", (req, res) => {
             
         };
     });
+  }
 });
+
 
 
 app.listen(PORT, () =>
