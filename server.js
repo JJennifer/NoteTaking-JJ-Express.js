@@ -1,10 +1,11 @@
 const express = require("express");
 const path = require("path");
 const fs = require("fs");
+// This is to give random ID to notes
 const { v4: uuidv4 } = require("uuid");
 
 
-
+// this allows heroku to assign it to available port
 const PORT = process.env.PORT || 4002;
  
 const app = express();
