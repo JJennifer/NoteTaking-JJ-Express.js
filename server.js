@@ -40,7 +40,7 @@ app.post("/api/notes", (req, res) => {
             text,
         };
     };
-    fs.readFile("./db/sb.json", "utf8", (error, data)=> {
+    fs.readFile("./db/db.json", "utf8", (error, data)=> {
         if(error){
             console.log("There is an error");
         } else {
