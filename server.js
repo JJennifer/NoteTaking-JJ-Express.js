@@ -1,11 +1,12 @@
 const express = require("express");
 const path = require("path");
 const fs = require("fs");
+const { v4: uuidv4 } = require("uuid");
 
 
 
 const PORT = process.env.PORT || 4002;
-
+ 
 const app = express();
 
 app.use(express.json());
@@ -47,6 +48,7 @@ app.post("/api/notes", (req, res) => {
         const newNote = {
             title,
             text,
+            id:uuidv4(),
         };
     
     // reading notes in system to list them along with new note
@@ -67,7 +69,7 @@ app.post("/api/notes", (req, res) => {
             
         };
     });
-
+// puting it to the left column when saving 
     const response = {
         status: "success",
         body: newNote,
