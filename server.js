@@ -4,7 +4,7 @@ const fs = require("fs");
 const db = require("./db/db.json")
 
 
-const PORT = 3001;
+const PORT = 4002;
 
 const app = express();
 
