@@ -53,6 +53,9 @@ I created a server.js and added in npm packages like express and uuid. This will
   * Github Username: JJennifer
   * Email: jenniferj1796@gmail.com
   
+  ## Screenshot
+
+![Jennifer's Note Taker Screenshot](./Assets/note-taking-jj-express.herokuapp.com_notes.png)
 
   ## Deployed Application
 
