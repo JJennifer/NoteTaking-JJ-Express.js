@@ -18,9 +18,9 @@ app.get("/", (req, res) =>
 );
 
 // the /notes is given by the index.js line 7 
-app.get("/notes", (req, res) => {
+app.get("/notes", (req, res) => 
   res.sendFile(path.join(__dirname, "/public/notes.html"))
-});
+);
 
 // /api/notes is given by index.js line 29
 app.get("/api/notes", (req, res) => {
